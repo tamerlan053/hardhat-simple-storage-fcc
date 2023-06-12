@@ -6,7 +6,7 @@ async function main() {
   await deployedContract.waitForDeployment();
   console.log("SimpleStorage Contract Address:", await deployedContract.getAddress());
   if (network.config.chainId == 11155111 && process.env.ETHERSCAN_API_KEY) {
-    await deployedContract.deployTransaction.wait(6)
+    await deployedContract.deployTransaction.wait(5)
     await verify(deployedContract.address, []);
   }
 
