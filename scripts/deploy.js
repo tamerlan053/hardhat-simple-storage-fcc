@@ -9,6 +9,13 @@ async function main() {
     await deployedContract.deployTransaction.wait(5)
     await verify(deployedContract.address, []);
   }
+    const currentValue = await deployedContract.retrieve()
+  console.log(`Current value is: ${currentValue}`)
+  
+    const transactionResponse = await deployedContract.store(7)
+  await transactionResponse.wait(1)
+  const updatedValue = await deployedContract.retrieve()
+  console.log(`Updated value is: ${updatedValue}`)
 
 
 }
