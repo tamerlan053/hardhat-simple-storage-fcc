@@ -1,6 +1,6 @@
 const { ethers, run, network } = require("hardhat");
 
-async function main() {
+//async function verify(contractAddress, args) => {} 
   const deployedContract = await ethers.deployContract("SimpleStorage");
   console.log("Deploying contract...");
   await deployedContract.waitForDeployment();
