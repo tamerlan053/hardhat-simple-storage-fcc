@@ -8,7 +8,7 @@ const { ethers, run, network } = require("hardhat");
   console.log("SimpleStorage Contract Address:", await deployedContract.getAddress());
   if (network.config.chainId == 11155111 && process.env.ETHERSCAN_API_KEY) {
   await deployedContract.deployTransaction.wait(5)
-   await verify(deployedContract.address, []);
+  await verify(deployedContract.address, []);
   }
   const currentValue = await deployedContract.retrieve()
   console.log(`Current value is: ${currentValue}`)
