@@ -1,6 +1,7 @@
-const { task } = require("hardhat/config");
+const { task } = require("hardhat/config")
 
-task ("block-number", "Prints theh current block-number").setAction(
-  async (taskArgs, hre) => {
-  }
+task("block-number", "Prints the current block number").setAction(
+    async (taskArhs, hre) => {
+        const blockNumber = hre.ethers.provider.getBlockNumber()
+    }
 )
