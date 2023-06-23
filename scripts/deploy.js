@@ -35,7 +35,9 @@ async function verify(contractAddress, args) {
   }
 }
 
-async function () {}
+async function () {
+  console.log("Ininitating the state...")
+}
 
 main()
   .then(() => process.exit(0))
