@@ -35,6 +35,8 @@ async function verify(contractAddress, args) {
   }
 }
 
+async function () {}
+
 main()
   .then(() => process.exit(0))
   .catch((error) => {
