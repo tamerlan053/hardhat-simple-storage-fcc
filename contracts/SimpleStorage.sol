@@ -20,7 +20,9 @@ contract SimpleStorage {
     favoriteNumber = _favoriteNumber;
   }
 
-  function returnBalance() public view returns(uint){}
+  function returnBalance() public view returns(uint){
+    return address(this).balance;
+  }
 
   function retrieve() public view returns (uint256) {
     return favoriteNumber;
