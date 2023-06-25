@@ -4,6 +4,7 @@ pragma solidity ^0.8.8;
 
 contract SimpleStorage {
   uint256 favoriteNumber;
+  uint 256 priceConverter;
 
   struct People {
     uint256 favoriteNumber;
