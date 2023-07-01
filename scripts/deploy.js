@@ -9,7 +9,6 @@ async function main() {
     await deployedContract.sendTransaction.wait(6)
     await verify(deployedContract.address, []);
   }
-  console.los("The contact has been verified")
 
   const currentValue = await deployedContract.retrieve()
   console.log(`Current value is: ${currentValue}`)
