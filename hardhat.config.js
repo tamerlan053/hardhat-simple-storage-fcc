@@ -1,7 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config()
 require("./tasks/block-number")
-require("@nomiclabs/hardhat-etherscan")
+//require("@nomiclabs/hardhat-etherscan")
 
 task("accounts", "Prints the list of accounts", async (_, { ethers }) => {
   const accounts = await ethers.getSigners();
